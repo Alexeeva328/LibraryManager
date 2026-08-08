@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{E6B43D89-DDCB-4D19-B77F-58BF69B9C7ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1F0C9C65-282B-4D5F-94AF-1F4D68267131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{E6B43D89-DDCB-4D19-B77F-58BF69B9C7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6B43D89-DDCB-4D19-B77F-58BF69B9C7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6B43D89-DDCB-4D19-B77F-58BF69B9C7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
