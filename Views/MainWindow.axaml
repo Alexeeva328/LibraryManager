@@ -7,5 +7,61 @@
                      x:DataType="viewModels:MainWindowViewModel"
                      Title="Гавань историй"
                      WindowState="Maximized">
-    Welcome to Avalonia!
+
+    <Window.Styles>
+        <!-- Стиль для кнопок переключения темы -->
+        <Style Selector="Button.theme-toggle">
+            <Setter Property="Background" Value="{DynamicResource CardBackgroundBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}" />
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="Padding" Value="10,8" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+
+        <Style Selector="Button.theme-toggle:pointerover">
+            <Setter Property="Background" Value="{DynamicResource CardHoverBackgroundBrush}" />
+        </Style>
+    </Window.Styles>
+
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal"
+                    HorizontalAlignment="Right" Margin="0,10,15,0">
+
+            <!-- Индикатор текущей темы -->
+            <TextBlock Text="{Binding CurrentThemeName}"
+                       VerticalAlignment="Center"
+                       Foreground="{DynamicResource SecondaryTextBrush}"
+                       Margin="0,0,10,0" />
+
+            <!-- Кнопка переключения между светлой/тёмной -->
+            <ToggleButton IsChecked="{Binding IsDarkTheme}"
+                          Command="{Binding ToggleThemeCommand}"
+                          Classes="theme-toggle">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding IsDarkTheme, Converter={StaticResource ThemeIconConverter}}"
+                               FontSize="16" />
+                </StackPanel>
+            </ToggleButton>
+
+            <!-- Кнопка циклического переключения по всем темам -->
+            <Button Command="{Binding CycleThemeCommand}"
+                    Classes="theme-toggle"
+                    ToolTip.Tip="Сменить тему">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="🎨" FontSize="16" Margin="0,0,5,0" />
+                    <TextBlock Text="Темы" FontSize="14" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <!-- Остальное содержимое -->
+        <Grid>
+            <!-- Ваше содержимое здесь -->
+            <Button Content="Nnnnnf"></Button>
+        </Grid>
+    </DockPanel>
 </rxui:ReactiveWindow>

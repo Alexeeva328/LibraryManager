@@ -2,14 +2,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Views.App"
              xmlns:global="clr-namespace:"
+             xmlns:converters="clr-namespace:Converters;assembly=Converters"
              RequestedThemeVariant="Default">
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
-    <Application.DataTemplates>
-        <global:ViewLocator />
-    </Application.DataTemplates>
+    <Application.Resources>
+        <ResourceDictionary>
+            <converters:ThemeIconConverter x:Key="ThemeIconConverter" />
+            <ResourceDictionary.ThemeDictionaries>
+                <!-- Подключаем Розовую тему -->
+                <MergeResourceInclude x:Key="Pink" Source="avares://Views/Styles/Colors/PinkColors.axaml" />
+
+                <!-- Подключаем Мятную тему -->
+                <MergeResourceInclude x:Key="Mint" Source="avares://Views/Styles/Colors/MintColors.axaml" />
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
     <Application.Styles>
-        <FluentTheme />
+        <FluentTheme>
+        </FluentTheme>
+        <StyleInclude Source="avares://Views/Styles/ThemeManager.axaml" />
     </Application.Styles>
+
 </Application>

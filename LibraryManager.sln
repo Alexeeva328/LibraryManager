@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\Vi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1F0C9C65-282B-4D5F-94AF-1F4D68267131}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters", "Converters\Converters.csproj", "{257F9780-49EA-4D48-8951-1D4DFB35B8FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelServices", "ViewModelServices\ViewModelServices.csproj", "{CDA26A71-6B45-4F84-BB8D-0A43D87C5796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0C9C65-282B-4D5F-94AF-1F4D68267131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257F9780-49EA-4D48-8951-1D4DFB35B8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257F9780-49EA-4D48-8951-1D4DFB35B8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257F9780-49EA-4D48-8951-1D4DFB35B8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257F9780-49EA-4D48-8951-1D4DFB35B8FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA26A71-6B45-4F84-BB8D-0A43D87C5796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA26A71-6B45-4F84-BB8D-0A43D87C5796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA26A71-6B45-4F84-BB8D-0A43D87C5796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA26A71-6B45-4F84-BB8D-0A43D87C5796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

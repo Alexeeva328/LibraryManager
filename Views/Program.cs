@@ -4,12 +4,15 @@ using System.IO;
 using System.Threading.Tasks;
 using Avalonia.ReactiveUI;
 using DataAccess;
+using LibraryManager;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Services.Title;
 using Serilog;
+using ViewModels;
+using ViewModelServices.Common;
 
 namespace Views;
 
@@ -91,5 +94,12 @@ internal sealed class Program
     {
         // Регистрируем сервисы
         services.AddSingleton<ITitleService, TitleService>();
+        services.AddSingleton<IThemeService, ThemeService>();
+
+        // Регистрируем ViewModel
+        services.AddSingleton<MainWindowViewModel>();
+        
+        // Регистрируем View
+        services.AddTransient<MainWindow>();
     }
 }

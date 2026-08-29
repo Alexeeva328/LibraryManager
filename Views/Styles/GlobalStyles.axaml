@@ -1,10 +1,32 @@
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Design.PreviewWith>
-        <Border Padding="20">
-            <!-- Add Controls for Previewer Here -->
-        </Border>
-    </Design.PreviewWith>
 
-    <!-- Add Styles Here -->
+    <!-- Глобальный стиль для всех окон -->
+    <Style Selector="Window">
+        <Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="FontFamily" Value="Segoe UI, Arial, sans-serif" />
+    </Style>
+
+    <!-- Глобальный стиль для всех UserControl -->
+    <Style Selector="UserControl">
+        <Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
+    </Style>
+
+    <!-- Стиль для всех Separator -->
+    <Style Selector="Separator">
+        <Setter Property="Background" Value="{DynamicResource SeparatorBrush}" />
+        <Setter Property="Height" Value="1" />
+    </Style>
+
+    <!-- Стиль для всех ScrollBar (кастомизация) -->
+    <Style Selector="ScrollBar">
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <Style Selector="ScrollBar.Thumb">
+        <Setter Property="Background" Value="{DynamicResource SecondaryTextBrush}" />
+        <Setter Property="CornerRadius" Value="4" />
+    </Style>
+
 </Styles>
