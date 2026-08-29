@@ -1,6 +1,5 @@
 ﻿using Avalonia;
 using System;
-using System.IO;
 using System.Threading.Tasks;
 using Avalonia.ReactiveUI;
 using DataAccess;
@@ -97,8 +96,8 @@ internal sealed class Program
         services.AddSingleton<IThemeService, ThemeService>();
 
         // Регистрируем ViewModel
-        services.AddSingleton<MainWindowViewModel>();
-        
+        services.AddTransient<MainWindowViewModel>();
+
         // Регистрируем View
         services.AddTransient<MainWindow>();
     }
