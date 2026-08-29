@@ -1,15 +1,17 @@
 ﻿using Avalonia;
 using System;
-using System.IO;
 using System.Threading.Tasks;
 using Avalonia.ReactiveUI;
 using DataAccess;
+using LibraryManager;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Services.Title;
 using Serilog;
+using ViewModels;
+using ViewModelServices.Common;
 
 namespace Views;
 
@@ -59,7 +61,8 @@ internal sealed class Program
                 var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
                 await dbContext.Database.MigrateAsync();
             }
-            
+
+
             BuildAvaloniaApp(host)
                 .StartWithClassicDesktopLifetime(args);
 
@@ -90,8 +93,12 @@ internal sealed class Program
     {
         // Регистрируем сервисы
         services.AddSingleton<ITitleService, TitleService>();
+        services.AddSingleton<IThemeService, ThemeService>();
 
-        services.AddTransient<ViewModels.MainWindowViewModel>();
-        services.AddTransient<LibraryManager.MainWindow>();
+        // Регистрируем ViewModel
+        services.AddTransient<MainWindowViewModel>();
+
+        // Регистрируем View
+        services.AddTransient<MainWindow>();
     }
 }

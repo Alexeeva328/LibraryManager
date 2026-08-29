@@ -6,6 +6,18 @@
         <entry key="LibraryManager/Views/MainWindow.axaml" value="LibraryManager/LibraryManager.csproj" />
         <entry key="Views/App.axaml" value="Views/Views.csproj" />
         <entry key="Views/MainWindow.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors/Colors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors/DarkColors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors/LightColors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors/MintColors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Colors/PinkColors.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Controls/ButtonStyles.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Controls/CardStyles.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Controls/InputStyles.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/Controls/TextStyles.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/GlobalStyles.axaml" value="Views/Views.csproj" />
+        <entry key="Views/Styles/ThemeManager.axaml" value="Views/Views.csproj" />
       </map>
     </option>
   </component>

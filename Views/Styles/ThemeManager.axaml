@@ -1,0 +1,11 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ПОДКЛЮЧАЕМ ВСЕ СТИЛИ -->
+    <StyleInclude Source="avares://Views/Styles/GlobalStyles.axaml" />
+    <StyleInclude Source="avares://Views/Styles/Controls/ButtonStyles.axaml" />
+    <StyleInclude Source="avares://Views/Styles/Controls/CardStyles.axaml" />
+    <StyleInclude Source="avares://Views/Styles/Controls/TextStyles.axaml" />
+    <StyleInclude Source="avares://Views/Styles/Controls/InputStyles.axaml" />
+
+</Styles>

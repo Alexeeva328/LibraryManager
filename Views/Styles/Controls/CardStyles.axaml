@@ -1,0 +1,53 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Базовый стиль для любой границы с классом Card -->
+    <Style Selector="Border.Card">
+        <Setter Property="Background" Value="{DynamicResource CardBackgroundBrush}"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+    
+    <Style Selector="Border.Card:pointerover">
+        <Setter Property="Background" Value="{DynamicResource CardHoverBackgroundBrush}"/>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.02" ScaleY="1.02"/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+    </Style>
+    
+    <!-- Статус-бейджик на карточке -->
+    <Style Selector="Border.StatusBadge">
+        <Setter Property="CornerRadius" Value="0,0,10,0"/>
+        <Setter Property="Padding" Value="8,2"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+    
+    <Style Selector="Border.StatusBadge.WantToRead">
+        <Setter Property="Background" Value="{DynamicResource StatusWantToReadBrush}"/>
+    </Style>
+    
+    <Style Selector="Border.StatusBadge.Reading">
+        <Setter Property="Background" Value="{DynamicResource StatusReadingBrush}"/>
+    </Style>
+    
+    <Style Selector="Border.StatusBadge.Finished">
+        <Setter Property="Background" Value="{DynamicResource StatusFinishedBrush}"/>
+    </Style>
+    
+    <Style Selector="Border.StatusBadge.Dropped">
+        <Setter Property="Background" Value="{DynamicResource StatusDroppedBrush}"/>
+    </Style>
+    
+    <Style Selector="Border.StatusBadge.OnHold">
+        <Setter Property="Background" Value="{DynamicResource StatusOnHoldBrush}"/>
+    </Style>
+    
+</Styles>

@@ -1,15 +1,28 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Views.App"
-             xmlns:global="clr-namespace:"
-             RequestedThemeVariant="Default">
+             xmlns:local="using:ViewModelServices.Common"
+             xmlns:converters="clr-namespace:Converters;assembly=Converters"
+             RequestedThemeVariant="{x:Static local:CustomThemes.Pink}">
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
-    <Application.DataTemplates>
-        <global:ViewLocator />
-    </Application.DataTemplates>
+    <Application.Resources>
+        <ResourceDictionary>
+            <converters:ThemeIconConverter x:Key="ThemeIconConverter" />
+            <ResourceDictionary.ThemeDictionaries>
+                <!-- Подключаем Розовую тему -->
+                <MergeResourceInclude x:Key="{x:Static local:CustomThemes.Pink}"  Source="avares://Views/Styles/Colors/PinkColors.axaml" />
+
+                <!-- Подключаем Мятную тему -->
+                <MergeResourceInclude x:Key="{x:Static local:CustomThemes.Mint}" Source="avares://Views/Styles/Colors/MintColors.axaml" />
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
     <Application.Styles>
-        <FluentTheme />
+        <FluentTheme>
+        </FluentTheme>
+        <StyleInclude Source="avares://Views/Styles/ThemeManager.axaml" />
     </Application.Styles>
+
 </Application>

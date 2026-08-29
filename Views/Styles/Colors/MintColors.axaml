@@ -1,0 +1,26 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Мятная тема -->
+    <SolidColorBrush x:Key="BackgroundBrush">#F0FFF4</SolidColorBrush>
+    <SolidColorBrush x:Key="PanelBackgroundBrush">#E0F5EC</SolidColorBrush>
+    <SolidColorBrush x:Key="CardBackgroundBrush">#FFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="CardHoverBackgroundBrush">#E0F5EC</SolidColorBrush>
+
+    <SolidColorBrush x:Key="PrimaryTextBrush">#1A4A3A</SolidColorBrush>
+    <SolidColorBrush x:Key="SecondaryTextBrush">#4A8A6A</SolidColorBrush>
+    <SolidColorBrush x:Key="InvertedTextBrush">#FFFFFF</SolidColorBrush>
+
+    <SolidColorBrush x:Key="BorderBrush">#A0D4C4</SolidColorBrush>
+    <SolidColorBrush x:Key="SeparatorBrush">#C0E4D4</SolidColorBrush>
+
+    <SolidColorBrush x:Key="InputBackgroundBrush">#FFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="InputBorderBrush">#A0D4C4</SolidColorBrush>
+    <SolidColorBrush x:Key="InputForegroundBrush">#1A4A3A</SolidColorBrush>
+
+    <!-- Переопределяем акценты для мятной темы -->
+    <SolidColorBrush x:Key="AccentBrush">#2ECC71</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentHoverBrush">#58D68D</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentPressedBrush">#27AE60</SolidColorBrush>
+
+</ResourceDictionary>
