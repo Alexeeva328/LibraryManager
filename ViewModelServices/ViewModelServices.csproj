@@ -10,4 +10,10 @@
       <Folder Include="Models\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Avalonia.Base">
+        <HintPath>..\Views\bin\Debug\net10.0\Avalonia.Base.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

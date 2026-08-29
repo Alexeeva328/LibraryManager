@@ -63,17 +63,18 @@ public class App : Application
     {
         try
         {
-            var themeName = customTheme switch
+            RequestedThemeVariant = customTheme switch
             {
-                CustomTheme.Light => "Light",
-                CustomTheme.Dark => "Dark",
-                CustomTheme.Pink => "Pink",
-                CustomTheme.Mint => "Mint",
-                _ => "Light"
+                CustomTheme.Default => ThemeVariant.Default,
+                CustomTheme.Light => ThemeVariant.Light,
+                CustomTheme.Dark => ThemeVariant.Dark,
+
+                // Используем наши статические объекты вместо строк:
+                CustomTheme.Pink => CustomThemes.Pink,
+                CustomTheme.Mint => CustomThemes.Mint,
+                _ => ThemeVariant.Default
             };
 
-            // Применяем тему ко всему приложению
-            RequestedThemeVariant = new(themeName, ThemeVariant.Light);
         }
         catch (Exception ex)
         {
