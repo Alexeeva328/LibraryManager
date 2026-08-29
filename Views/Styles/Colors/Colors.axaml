@@ -1,0 +1,33 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Объявляем ресурсы без значений -->
+    <!-- Значения будут переопределены в DarkColors / LightColors -->
+    <SolidColorBrush x:Key="BackgroundBrush" />
+    <SolidColorBrush x:Key="PanelBackgroundBrush" />
+    <SolidColorBrush x:Key="CardBackgroundBrush" />
+    <SolidColorBrush x:Key="CardHoverBackgroundBrush" />
+    
+    <SolidColorBrush x:Key="PrimaryTextBrush" />
+    <SolidColorBrush x:Key="SecondaryTextBrush" />
+    <SolidColorBrush x:Key="InvertedTextBrush" />
+    
+    <!-- Акценты (не зависят от темы) -->
+    <SolidColorBrush x:Key="AccentBrush">#D4A54A</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentHoverBrush">#E8C86A</SolidColorBrush>
+    <SolidColorBrush x:Key="AccentPressedBrush">#B8923A</SolidColorBrush>
+    
+    <!-- Цвета статусов -->
+    <SolidColorBrush x:Key="StatusWantToReadBrush">#4A90D9</SolidColorBrush>
+    <SolidColorBrush x:Key="StatusReadingBrush">#27AE60</SolidColorBrush>
+    <SolidColorBrush x:Key="StatusFinishedBrush">#2ECC71</SolidColorBrush>
+    <SolidColorBrush x:Key="StatusDroppedBrush">#E74C3C</SolidColorBrush>
+    <SolidColorBrush x:Key="StatusOnHoldBrush">#F39C12</SolidColorBrush>
+    
+    <SolidColorBrush x:Key="BorderBrush" />
+    <SolidColorBrush x:Key="SeparatorBrush" />
+    <SolidColorBrush x:Key="InputBackgroundBrush" />
+    <SolidColorBrush x:Key="InputBorderBrush" />
+    <SolidColorBrush x:Key="InputForegroundBrush" />
+    
+</ResourceDictionary>
