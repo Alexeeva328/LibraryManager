@@ -59,8 +59,7 @@ internal sealed class Program
                 var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
                 await dbContext.Database.MigrateAsync();
             }
-
-
+            
             BuildAvaloniaApp(host)
                 .StartWithClassicDesktopLifetime(args);
 
@@ -91,5 +90,8 @@ internal sealed class Program
     {
         // Регистрируем сервисы
         services.AddSingleton<ITitleService, TitleService>();
+
+        services.AddTransient<ViewModels.MainWindowViewModel>();
+        services.AddTransient<LibraryManager.MainWindow>();
     }
 }

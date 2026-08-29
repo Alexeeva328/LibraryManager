@@ -7,5 +7,5 @@
                      x:DataType="viewModels:MainWindowViewModel"
                      Title="Гавань историй"
                      WindowState="Maximized">
-    Welcome to Avalonia!
+    <TextBlock>   Welcome to Avalonia!</TextBlock>
 </rxui:ReactiveWindow>
